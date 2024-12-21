@@ -1,0 +1,35 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyo
+.env
+venv/
+*.coverage
+.coverage.*
+.cache/
+
+# React
+node_modules/
+*.log
+build/
+dist/
+
+# Common editors/IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+*.log
