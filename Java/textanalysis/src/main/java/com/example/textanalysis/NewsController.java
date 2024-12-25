@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @RestController
 @RequestMapping("api/news")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://id30123.web.app/")
 public class NewsController {
 
     @Autowired
