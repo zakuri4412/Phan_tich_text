@@ -83,8 +83,8 @@ def plot_ovo_svm(X_train, y_train, classifier, labels):
         plt.plot(x_vals, decision_boundary, label=f"Class {class1} vs {class2}")
 
     plt.title("One-vs-One SVM Decision Boundaries")
-    plt.xlabel("Feature 1")
-    plt.ylabel("Feature 2")
+    plt.xlabel("")
+    plt.ylabel("")
     plt.legend()
     plt.grid(True)
     plt.show()
@@ -117,6 +117,6 @@ def process_news():
     return jsonify({"articles": result})
 
 if __name__ == '__main__':
-    sample_size = min(100, len(train_labels))
+    sample_size = min(86, len(train_labels))
     plot_ovo_svm(X_train_tfidf[:sample_size], train_labels[:sample_size], ovo_classifier, label_mapping)
     app.run(host='0.0.0.0', port=5000)
